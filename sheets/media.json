@@ -1,0 +1,8 @@
+{
+  "sheet": "media",
+  "about": "Every image the add-on shows. With Melty, MirrorLink converts the newest picture in the player's Pictures\\Mirror Portraits folder into Generated\\<file>. In the add-on-only (CurseForge) download there's no converter, so the player saves a 512x512 TGA named <manual> in the add-on folder. Nothing is shipped.",
+  "columns": ["id", "file", "source", "from", "width", "height", "placeholder", "manual"],
+  "rows": [
+    { "id": "portrait", "file": "Portrait.tga", "source": "picture-folder", "from": "Mirror Portraits", "width": 512, "height": 512, "placeholder": "transparent", "manual": "Portrait.tga" }
+  ]
+}

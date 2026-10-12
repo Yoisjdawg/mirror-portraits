@@ -1,0 +1,10 @@
+{
+  "sheet": "share",
+  "about": "Add-on messages (prefix MIRRORPT) that let other players with Mirror Portraits see your profile name and title in your tooltip. Fields are settings keys; ver is the protocol version. Pictures are never sent.",
+  "columns": ["id", "code", "fields", "channels", "when", "throttle"],
+  "rows": [
+    { "id": "hello", "code": "H", "fields": ["ver", "name", "title"], "channels": ["GUILD", "PARTY", "RAID"], "when": "login,change,group", "throttle": 10 },
+    { "id": "query", "code": "Q", "fields": ["ver"], "channels": ["WHISPER"], "when": "mouseover-unknown", "throttle": 60 },
+    { "id": "reply", "code": "H", "fields": ["ver", "name", "title"], "channels": ["WHISPER"], "when": "on-query", "throttle": 5 }
+  ]
+}

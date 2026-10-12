@@ -1,0 +1,104 @@
+﻿{
+    "sheet":  "hooks",
+    "about":  "Every WoW event, script hook and API the add-on touches, and the file that handles it.",
+    "columns":  [
+                    "id",
+                    "kind",
+                    "target",
+                    "purpose",
+                    "file"
+                ],
+    "rows":  [
+                 {
+                     "id":  "loaded",
+                     "kind":  "event",
+                     "target":  "ADDON_LOADED",
+                     "purpose":  "init MirrorPortraitsDB from settings defaults",
+                     "file":  "Core.lua"
+                 },
+                 {
+                     "id":  "login",
+                     "kind":  "event",
+                     "target":  "PLAYER_LOGIN",
+                     "purpose":  "build overlays and the profile, say hello",
+                     "file":  "Core.lua"
+                 },
+                 {
+                     "id":  "world",
+                     "kind":  "event",
+                     "target":  "PLAYER_ENTERING_WORLD",
+                     "purpose":  "run the Melty test mode",
+                     "file":  "Core.lua"
+                 },
+                 {
+                     "id":  "target",
+                     "kind":  "event",
+                     "target":  "PLAYER_TARGET_CHANGED",
+                     "purpose":  "show your picture on the target frame when you target yourself",
+                     "file":  "Portrait.lua"
+                 },
+                 {
+                     "id":  "portrait-update",
+                     "kind":  "event",
+                     "target":  "UNIT_PORTRAIT_UPDATE",
+                     "purpose":  "keep the overlay on top after Blizzard redraws",
+                     "file":  "Portrait.lua"
+                 },
+                 {
+                     "id":  "addon-msg",
+                     "kind":  "event",
+                     "target":  "CHAT_MSG_ADDON",
+                     "purpose":  "receive hello/query/reply",
+                     "file":  "Share.lua"
+                 },
+                 {
+                     "id":  "roster",
+                     "kind":  "event",
+                     "target":  "GROUP_ROSTER_UPDATE",
+                     "purpose":  "say hello to a new group",
+                     "file":  "Share.lua"
+                 },
+                 {
+                     "id":  "mouseover",
+                     "kind":  "event",
+                     "target":  "UPDATE_MOUSEOVER_UNIT",
+                     "purpose":  "ask unknown players for their profile",
+                     "file":  "Share.lua"
+                 },
+                 {
+                     "id":  "tooltip",
+                     "kind":  "hook",
+                     "target":  "GameTooltip OnTooltipSetUnit / TooltipDataProcessor",
+                     "purpose":  "add the profile line to player tooltips",
+                     "file":  "Share.lua"
+                 },
+                 {
+                     "id":  "send",
+                     "kind":  "api",
+                     "target":  "C_ChatInfo.SendAddonMessage",
+                     "purpose":  "send share rows",
+                     "file":  "Share.lua"
+                 },
+                 {
+                     "id":  "prefix",
+                     "kind":  "api",
+                     "target":  "C_ChatInfo.RegisterAddonMessagePrefix",
+                     "purpose":  "listen on MIRRORPT",
+                     "file":  "Share.lua"
+                 },
+                 {
+                     "id":  "refresh",
+                     "kind":  "api",
+                     "target":  "Texture:SetTexture",
+                     "purpose":  "re-read Portrait.tga every few seconds so a new picture appears",
+                     "file":  "Portrait.lua"
+                 },
+                 {
+                     "id":  "slash",
+                     "kind":  "api",
+                     "target":  "SlashCmdList",
+                     "purpose":  "/mp (and /mirror) open the profile and change settings",
+                     "file":  "Profile.lua"
+                 }
+             ]
+}

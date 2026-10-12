@@ -1,0 +1,8 @@
+{
+  "sheet": "flavors",
+  "about": "WoW clients the add-on installs into and starts. WoW Forever lives in _classic_beta_ (WowB.exe, add-on Interface 16001). Started through the Battle.net app with --exec=launch <family> so it signs in by itself; WowB.exe directly (own login screen) when Battle.net isn't installed or doesn't start it. Verified on this PC 2026-10-12: 'launch WoWF' runs WowB.exe -launcherlogin -uid wow_classic_beta within a second ('launch WoW' picks retail; launch_uid only selects).",
+  "columns": ["id", "label", "folder", "exe", "interface", "uid", "family"],
+  "rows": [
+    { "id": "forever", "label": "World of Warcraft Forever", "folder": "_classic_beta_", "exe": "WowB.exe", "interface": 16001, "uid": "wow_classic_beta", "family": "WoWF" }
+  ]
+}

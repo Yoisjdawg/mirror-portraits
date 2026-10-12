@@ -1,0 +1,9 @@
+{
+  "sheet": "crops",
+  "about": "Parts of Portrait.tga (texture coordinates 0-1; the picture is cut to a centred square). The face crop is the default framing of the round portraits; the player can re-frame it in the profile.",
+  "columns": ["id", "media", "x", "y", "w", "h", "adjustable"],
+  "rows": [
+    { "id": "face", "media": "portrait", "x": 0.1, "y": 0.05, "w": 0.8, "h": 0.8, "adjustable": true },
+    { "id": "photo", "media": "portrait", "x": 0.0, "y": 0.0, "w": 1.0, "h": 1.0, "adjustable": false }
+  ]
+}

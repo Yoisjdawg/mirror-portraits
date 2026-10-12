@@ -1,0 +1,6 @@
+build/
+media/
+*.tmp
+
+MODLOG.md
+curseforge/*.zip

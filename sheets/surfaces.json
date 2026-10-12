@@ -1,0 +1,10 @@
+{
+  "sheet": "surfaces",
+  "about": "Where your picture replaces WoW's own portrait. Each row is an overlay texture laid over a Blizzard portrait (first path that exists wins), masked round.",
+  "columns": ["id", "paths", "parent", "crop", "when", "sublevel"],
+  "rows": [
+    { "id": "player-portrait", "paths": ["PlayerPortrait", "PlayerFrame.PlayerFrameContainer.PlayerPortrait", "PlayerFrame.portrait"], "parent": "PlayerFrame", "crop": "face", "when": "always", "sublevel": 7 },
+    { "id": "character-portrait", "paths": ["CharacterFramePortrait", "CharacterFrame.PortraitContainer.portrait", "CharacterFrame.portrait"], "parent": "CharacterFrame", "crop": "face", "when": "always", "sublevel": 7 },
+    { "id": "target-self", "paths": ["TargetFramePortrait", "TargetFrame.TargetFrameContainer.Portrait", "TargetFrame.portrait"], "parent": "TargetFrame", "crop": "face", "when": "self-target", "sublevel": 7 }
+  ]
+}

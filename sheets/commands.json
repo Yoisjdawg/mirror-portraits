@@ -1,0 +1,14 @@
+{
+  "sheet": "commands",
+  "about": "/mp sub-commands (/mirror works too). The profile opens only through /mp. setting names the settings key the command changes (or none).",
+  "columns": ["id", "usage", "setting", "help"],
+  "rows": [
+    { "id": "toggle", "usage": "/mp", "setting": "none", "help": "open or close your profile" },
+    { "id": "name", "usage": "/mp name <name>", "setting": "name", "help": "the name on your profile and tooltip" },
+    { "id": "title", "usage": "/mp title <text>", "setting": "title", "help": "a short title under your name" },
+    { "id": "portrait", "usage": "/mp portrait on|off", "setting": "portrait", "help": "your picture as your WoW portrait" },
+    { "id": "folder", "usage": "/mp folder", "setting": "none", "help": "show the picture folder path to copy (or click the Mirror Portraits icon by the Windows clock)" },
+    { "id": "refresh", "usage": "/mp refresh", "setting": "none", "help": "load the newest picture" },
+    { "id": "reset", "usage": "/mp reset", "setting": "faceS", "help": "reset the face framing" }
+  ]
+}

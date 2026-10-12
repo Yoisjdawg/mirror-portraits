@@ -1,0 +1,15 @@
+## Interface: 16001
+## Title: Mirror Portraits
+## Notes: Any picture (you, your dog, another game) as your WoW Forever portrait and profile. /mp
+## Author: @yoisjdawg
+## Version: 1.0.4
+## SavedVariables: MirrorPortraitsDB
+
+Generated\Info.lua
+Generated\Test.lua
+Data.lua
+Core.lua
+Portrait.lua
+Profile.lua
+Share.lua
+Test.lua

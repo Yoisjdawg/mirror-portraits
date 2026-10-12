@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "mode": "installed",
+  "games": [
+    { "slug": "world-of-warcraft", "role": "primary" }
+  ],
+  "components": [
+    { "id": "main", "fileName": "MirrorPortraits-1.0.4.zip", "label": "Mirror Portraits", "kind": "main", "required": true }
+  ],
+  "requirements": [],
+  "mappings": [
+    { "component": "main", "from": "wow/", "to": "{game}" },
+    { "component": "main", "from": "link/", "to": "{localappdata}/MirrorPortraits" }
+  ],
+  "launch": {
+    "kind": "exe",
+    "path": "{localappdata}/MirrorPortraits/MirrorLink.exe",
+    "env": { "MP_WOW": "{game}" }
+  },
+  "runtimeData": ["{localappdata}/MirrorPortraits"],
+  "notes": {
+    "firstLaunch": "Drop any picture (you, your dog, a screenshot) into the Pictures\\Mirror Portraits folder that opens. WoW Forever starts through Battle.net, signed in. Type /mp for your profile."
+  },
+  "test": {
+    "checks": ["picture-loaded", "portrait-overlay", "profile-panel", "tooltip-share"],
+    "minutes": 8
+  }
+}

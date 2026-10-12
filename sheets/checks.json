@@ -1,0 +1,11 @@
+{
+  "sheet": "checks",
+  "about": "Melty test checks the add-on reports (through MirrorLink) in a test run. source = sheets the check covers.",
+  "columns": ["id", "source", "passes"],
+  "rows": [
+    { "id": "picture-loaded", "source": "media,link", "passes": "MirrorLink ran, converted a picture from the folder, and the profile shows Portrait.tga" },
+    { "id": "portrait-overlay", "source": "surfaces,crops", "passes": "the picture overlay sits on the player portrait, masked round, with the face crop" },
+    { "id": "profile-panel", "source": "crops,settings,commands", "passes": "/mp opens the profile with the photo crop, name and title" },
+    { "id": "tooltip-share", "source": "share,settings", "passes": "a hello sent to yourself comes back and your tooltip shows your profile line" }
+  ]
+}

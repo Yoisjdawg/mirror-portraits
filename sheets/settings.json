@@ -1,0 +1,13 @@
+{
+  "sheet": "settings",
+  "about": "MirrorPortraitsDB (account-wide SavedVariables).",
+  "columns": ["key", "type", "default", "setBy", "shared", "max"],
+  "rows": [
+    { "key": "name", "type": "string", "default": "", "setBy": "panel,/mp name", "shared": true, "max": 24 },
+    { "key": "title", "type": "string", "default": "", "setBy": "panel,/mp title", "shared": true, "max": 32 },
+    { "key": "faceX", "type": "number", "default": 0.1, "setBy": "panel", "shared": false, "max": 1 },
+    { "key": "faceY", "type": "number", "default": 0.05, "setBy": "panel", "shared": false, "max": 1 },
+    { "key": "faceS", "type": "number", "default": 0.8, "setBy": "panel", "shared": false, "max": 1 },
+    { "key": "portrait", "type": "bool", "default": true, "setBy": "panel,/mp portrait", "shared": false, "max": 1 }
+  ]
+}

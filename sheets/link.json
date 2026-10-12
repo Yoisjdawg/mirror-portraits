@@ -1,0 +1,16 @@
+{
+  "sheet": "link",
+  "about": "What MirrorLink.exe (Melty's Play target) does, in order. target names a row in another sheet (sheet:id), a sheet, or a literal.",
+  "columns": ["id", "order", "action", "target", "condition"],
+  "rows": [
+    { "id": "write-picture", "order": 1, "action": "convert", "target": "media:portrait", "condition": "the picture added to Pictures\\Mirror Portraits most recently (by when it landed there, not its photo date), else a transparent placeholder" },
+    { "id": "write-info", "order": 2, "action": "lua", "target": "Generated/Info.lua", "condition": "always" },
+    { "id": "test-bridge", "order": 3, "action": "lua", "target": "Generated/Test.lua", "condition": "always" },
+    { "id": "show-folder", "order": 4, "action": "open", "target": "Pictures/Mirror Portraits", "condition": "the folder has no picture yet (first Play), not in a Melty test run" },
+    { "id": "open-wow", "order": 5, "action": "start", "target": "flavors:forever", "condition": "WoW Forever not running" },
+    { "id": "watch-pictures", "order": 6, "action": "watch", "target": "media:portrait", "condition": "a newer picture lands in the folder while WoW runs" },
+    { "id": "tray-icon", "order": 7, "action": "tray", "target": "Pictures/Mirror Portraits", "condition": "while MirrorLink runs: an icon by the Windows clock that opens the picture folder when clicked" },
+    { "id": "report", "order": 8, "action": "checks", "target": "checks", "condition": "Melty test run" },
+    { "id": "wait-wow", "order": 9, "action": "wait", "target": "flavors:forever", "condition": "until WoW Forever has been closed for 45 s" }
+  ]
+}
